@@ -1,0 +1,40 @@
+<!--
+             OBJECT - STORING UNSIMILIAR DATA IN ONE ENTITY;
+             OBJECT VALUES EXTRACT BY FOR IN LOOP 
+
+             FOR IN LOOP -      FOR(   VARIABLE(FOR INDEX) OUTPUT      IN       INPUT     )
+                                FOR (      INDEX                        IN      STUDENT    )
+                       PRINTING-  C.L(    INDEX    ,       in             STUDENT [INDEX]       )   -->
+                     <SCRipt>        
+        var student= {
+
+         rollno: 110,
+         name:"prajwal k shirsat",
+
+         address:"nasik city center",
+         pin:422008,
+         course: "pgdac march 2023",
+
+        }
+        console.log(student);
+
+        for(index in student)
+        {
+            console.log( index , student[index]);
+            document.write("------------------");
+           document.write(`<li> ${ index} ,${ student[index]}  </li>`)
+
+        }
+</SCRipt>
+
+
+
+
+
+
+
+
+
+
+
+

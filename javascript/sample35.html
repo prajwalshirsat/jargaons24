@@ -1,0 +1,27 @@
+
+<!-- //getelementsbyname -->
+
+<form action="">
+    <input type="text" placeholder="text"  name="n1">
+ <input type="number" placeholder="price " name="n1">
+
+ <input type="button " onclick="b1()"  value="enter">
+
+</form>
+
+
+<script>
+  
+  function b1()
+  {
+    console.log(document);   //get entire web page as document 
+
+    console.log(document.getElementsByName("n1"));
+    var a1=document.getElementsByName("n1");   //a1 as object 
+    a1[0].value="prajwal";
+    a1[1].value= 100;
+
+  }
+</script>
+
+

@@ -1,0 +1,57 @@
+<!-- parseFloat fun & tofixed() function
+// string   to float conversion 
+tofixed()  function  used to restrict nos after decimal  -->
+<!-- console.log(add.toFixed(2));  only two digits after decimal -->
+
+<input type="text" placeholder="no1" id="t1">
+<input type="text" placeholder="no2" id="t2">
+<p> </p>
+<button onclick="b1()">adding float </button>
+
+<script>
+    function b1() 
+    {
+       console.log(document);
+    var rec1=  document.querySelector("#t1").value;   
+      console.log(rec1);
+
+       var rec2= document.getElementById("t2").value
+      console.log(rec2);
+
+      var add = parseFloat(rec1)+parseFloat(rec2);
+      console.log(add);
+      console.log(add.toFixed(2));  // variable.toFixed(no);   //only 2 digits after decimal 
+      document.querySelector("p").innerHTML=add; // pass value stored in add variable to paragrapgh to display 
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

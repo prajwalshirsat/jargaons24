@@ -1,0 +1,123 @@
+<html>
+     <body style="border: solid; background-color: cyan;"><CEnter>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+
+            
+        <h1> SIMPLE INTEREST CALCULATION</h1>
+
+        <input type="text" placeholder="amount" id="i1"> </br></BR>
+        <input type="text" placeholder="rate" id="i2"> </br></BR>
+        <input type="text" placeholder="no of years" id="i3"> </br></BR>
+         <input type="text "  id="i4"  style="background-color: indianred;">
+
+         <button style="align-items: center; background-color: rgb(193, 194, 192);" onclick="simpleint()">calculate</button>
+         <h2  id="sih2"></h2>
+           <h3 id="sih3"></h3>
+           <h4 id="sih4"></h4>
+    </br ></br>
+          
+              
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <h1> compund interst calculate</h1>
+            <input type="text" placeholder="amount" id="c1"> </br></BR>
+            <input type="text" placeholder="rate" id="c2"> </br></BR>
+            <input type="text" placeholder="no of years" id="c3"> </br></BR>
+             <input type="text "  id="c4" placeholder=" compund interst" style="background-color: indianred;">
+             <button style="align-items: center; background-color: rgb(193, 194, 192);" onclick="compoundint()">calculate</button>
+             <h2 id="cih2"></h2>
+             <h3 id="cih3"></h3>
+             <h4 id="cih4"></h4>
+        </div>
+    </div>
+</div>
+
+
+                   
+
+        </CEnter>
+    </body>
+</html>
+<script>
+          
+          function simpleint()
+          {
+            console.log(document);
+
+            var amt= document.getElementById("i1").value;
+           console.log(amt);
+            var rate= document.querySelector("#i2").value;
+          
+            var yrs= document.querySelector("#i3").value;
+      
+       
+            si=(amt*rate*yrs)/100;
+           
+            finalamt= parseInt(si)+parseInt(amt);
+  
+            emi= (finalamt/(yrs*12))
+           document.querySelector("#sih2").innerHTML=(`SIMPLE INTERST ${si} `);
+           document.querySelector("#i4").value=(`SIMPLE INTERST ${si} `);
+           console.log(si);
+           document.getElementById("sih3").innerHTML=(` final amount with simple interst =  ${finalamt}`);
+
+           document.querySelector("#sih4").innerHTML=(` EMI =  ${emi}`);
+
+
+          }
+          function compoundint()
+          {
+            console.log(document);
+
+            principal= document.querySelector("#c1").value;
+
+            rate=document.querySelector("#c2").value
+
+            period=document.querySelector("#c3").value
+
+
+            futureval= principal*[(1+(rate/100))]**period;
+           
+             ci= parseFloat(futureval)-parseFloat(principal)
+
+            console.log(futureval);
+            document.querySelector("#c4").value=(`future value ${futureval}`);
+
+            document.querySelector("#cih2").innerHTML=(`future value  ${futureval}`);
+      
+            document.querySelector("#cih3").innerHTML=(`compound interest ${ci}`);
+             
+
+            
+          }
+
+ 
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

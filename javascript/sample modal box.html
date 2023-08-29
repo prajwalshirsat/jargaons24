@@ -1,0 +1,97 @@
+<html> 
+    <CENter>
+    <body onload="hidebox()"> 
+         
+        <div class="modalbox"></div>
+
+         <div class="blackbox"onclick=" hidebox() " ></div>
+
+
+        <button onclick="showbox()"> enter</button>
+        <div class="container">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque illum incidunt aut recusandae mollitia quis non accusamus esse commodi perferendis similique, distinctio blanditiis sit fugit laborum. Error similique obcaecati amet.
+
+            </p>
+        </div>
+        <div class="container">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ex possimus vero vel expedita soluta provident quia saepe non. Hic enim quod excepturi labore ducimus veniam fugit corrupti laboriosam nam.
+
+
+            </p>
+        </div>
+    </body>
+     <style>
+        .container{
+            font-size: 50px;
+                margin-bottom: 30px;
+                border: 1px solid;
+                width: 1200px;
+                margin: auto;
+    
+        }
+        .modalbox{ width: 500px;
+                height: 300px;
+                background: #fff;
+                z-index: 3;
+                left: 50%;
+                top: 50%;
+                margin-left: -250px;  /*half of 500*/
+
+                margin-top: -150px; 
+                border-radius: 10px;
+                box-shadow: 1px 2px 3px 4px #888;
+        }
+        .blackbox{
+            
+            width: 100%;
+               height: 100%;
+               position: fixed;
+               left: 0;
+               top: 0%;
+               background : rgba(0,0,0,0.5);
+               z-index: 2;
+        }
+     </style>
+
+</CENter>
+</html>
+<script>
+
+ function showbox()
+ {
+    console.log(document);
+
+    document.querySelector(".modalbox").style.display="block";
+    document.querySelector(".blackbox").style.display="block";
+
+ }
+ function hidebox()
+ {
+    console.log(document);
+
+    document.querySelector(".modalbox").style.display="none";
+    document.querySelector(".blackbox").style.display="none";
+
+ }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

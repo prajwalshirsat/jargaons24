@@ -1,0 +1,58 @@
+
+<!-- innerText, innerHTML ,value property -->
+
+<!-- use to change content in html tags  -->
+
+<!-- form elements need  (value property)              non form elements (innerHTML,innerText)
+ text                                              p tag,div tag,h1 tag, span tag 
+ radio
+ checkbox
+ textarea
+ password
+
+ innerHTML  display content as per applied html tag
+ innertext display content as it is for ex= output =<b>  sbumit </b>
+
+ input type boxes need value property 
+ -->
+
+<p style="width: 300px; border: solid 1px;" onclick="myfun(this)">hello i am prajwal</p>
+
+<input type="text" style="background-color: deepskyblue;" onclick="myview(this)">
+
+<script>
+    function myfun(myvr)
+    {
+        console.log(myvr);
+        console.log(typeof myvr);
+       myvr.innerHTML="<b>  sbumit </b>";  //make output bold by <b> tag
+                       //when u click on paragraph content get changed ,to submit 
+        myvr.innerText="<b>  sbumit </b>"//output as it is 
+
+    }
+    function myview(myv)       //myv to catch this parameter 
+    {
+        console.log(myv);
+        console.log( typeof myv);
+
+        myv.value=3000;
+        
+    }             //when u click on input box display 3000;
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

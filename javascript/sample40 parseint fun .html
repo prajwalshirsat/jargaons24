@@ -1,0 +1,42 @@
+<input type="text" placeholder="no1" id="t1">
+<input type="text " placeholder="no2" id="t2">
+<input type="text" placeholder="no3" id="t3">
+<input type="text" placeholder="no4" id="t4">
+
+<p id="p1"> </p>
+<p id="p2"></p>
+<button onclick="b1()">add</button>
+
+<button onclick="b2()">sub</button>
+
+
+<script>
+    function b1() {
+        console.log(document);
+        console.log(document.querySelector("#t1"));
+        var rec1 = document.querySelector("#t1").value;
+        console.log(rec1);
+        var rec2 = document.getElementById("t2").value;
+        console.log(rec2);
+
+        var add = parseInt(rec1) + parseInt(rec2);
+        console.log(add);
+
+        document.querySelector("#p1").innerHTML = add; //pass addition to paragrapgh tag whose id =p1
+    }
+    function b2() {
+        console.log(document);
+        console.log(document.querySelector("#t3"));
+        var rec3 = document.querySelector("#t3").value;
+        console.log(rec3);
+
+        var rec4 = document.getElementById("t4").value
+        console.log(rec4);
+
+
+        var sub = parseInt(rec3) - parseInt(rec4)
+        document.querySelector("#p2").innerHTML = sub;
+
+    }
+
+</script>

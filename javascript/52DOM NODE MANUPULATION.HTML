@@ -1,0 +1,51 @@
+<!-- DOM NODE MANUPULATION EXAMPLE
+ i.e adding in node & removing from node 
+storing username in unordered list 
+----------------------------------------------------------------------
+
+1)  created elements at run time create li 
+2)   createtextnode to asign assign values  to that created element(li)
+3)   append to empty text node 
+
+refer book 
+
+
+
+-->
+ 
+<input type="text" id="txt" placeholder="enter username">
+<button onclick="myfun()">enter</button>
+
+<ul id="username"></ul>
+<!-- <ul <li> </li> </ul> -->
+<script>
+    function myfun()
+    {
+        console.log(document);
+        tagname= document.createElement("li"); //create element (li)  
+        console.log(tagname);  // to print li
+
+        rec= document.querySelector("#txt").value; //to store value written in input box
+        console.log(rec);
+       
+        //create text node 
+        rec_record= document.createTextNode(rec);
+        console.log(rec_record); 
+
+        
+       tagname.appendChild(rec_record);//assign to empty li (list)
+       console.log(tagname);
+
+       document.querySelector("#username").appendChild(tagname);
+
+       //store that tagname in unordered list 
+    }
+</script>  
+
+
+
+
+
+
+
+

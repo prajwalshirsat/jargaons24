@@ -1,0 +1,40 @@
+<!-- getelementsbytagname dom method
+select multiple tags of same type in entire web page 
+and generate array as (html collection ) and store each tag as per index 
+so we can manupulate and change content as per index -->
+<h1>i</h1>
+<h1>am </h1>
+<h1>prajwAL</h1>
+<h1>shirsat</h1>
+
+<button onclick="c1()">enter</button>
+ 
+<script>
+    function c1()
+    {
+        console.log(document);  //get entire web page as document 
+        console.log(document.getElementsByTagName("h1"));  //print array 
+        document.getElementsByTagName("h1")[0].innerHTML="neirobi";
+
+     var rec =document.getElementsByTagName("h1");  //for code reusability;   nodelist stored in variable rec 
+      console.log(typeof rec);                                  // rec becomes object 
+     rec[1].innerHTML="tokyo";
+     rec[2].innerHTML="professor";
+     
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

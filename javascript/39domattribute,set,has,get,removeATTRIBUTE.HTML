@@ -1,0 +1,76 @@
+<!-- dom method  
+    getAttribute(), setAttribute(),
+    hasAttribute(),removeAttribute()
+
+      hasAttribute() =  check existence of attribute(width,id) ; (return value)
+     getAttribute()  =  return value 
+      setAttribute() =  to resize image& update (properties)
+      removeAttribute() = to remove attribute  
+ -->
+
+ <img src="1.jpg" alt="" width="200px" height="150px">
+ <button onclick="check_hasatt()">hasatt</button>
+<button onclick="check_getatt()">getatt</button>
+<button onclick="check_setatt()">setatt</button>
+<button onclick="check_removeatt()">removeatt</button>
+
+ <script>
+    function check_hasatt()
+    {
+        console.log(document);
+      console.log(document.querySelector("img"));
+     var ans= document.querySelector("img").hasAttribute("width");
+    console.log(`width ${ans}`);   // return true or false 
+    var ans2=document.querySelector("img").hasAttribute("height");
+    console.log(`heigtht ${ans2}`);
+
+    }
+    function check_getatt()
+    {
+        console.log(document);
+        console.log(document.querySelector("img"));
+        var gt=document.querySelector("img").getAttribute("width");
+        console.log(` get width ${gt}`);
+
+        var gt2=document.querySelector("img").getAttribute("height");
+        console.log(` get height ${gt2}`);
+        
+    }
+    function check_setatt()
+    {
+        console.log(document);
+        console.log(document.querySelector("img"));
+       document.querySelector("img").setAttribute("width",250);
+       document.querySelector("img").setAttribute("height",250);
+      
+    }
+    function check_removeatt()
+    {
+        console.log(document);
+        console.log(document.querySelector("img"));
+        document.querySelector("img").removeAttribute("width");
+        console.log("width removed by check__removeatt");
+    }
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

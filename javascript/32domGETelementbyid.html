@@ -1,0 +1,34 @@
+ <!-- dom  getelementbyid -->
+<!-- getElementById method select 1 st element only if two elements having same id -->
+
+ <!-- here select only first para by getelementbyid -->
+ <!-- getElementById method of dom structure used to change the content of html tag ,change the style -->
+ <p id="p1" >patahsb</p>
+ <p id="p1" >bdbdj</p>
+
+ <button onclick="myfun()">enter</button>
+
+ <script>
+    function myfun()
+    {
+        console.log(document);
+
+        console.log(document.getElementById("p1"));           //give id in console
+        document.getElementById("p1").innerHTML="<b>changed </b>";
+        document.getElementById("p1").style.background="red";
+
+    }
+    //  when u click on enter so para 1 content patahsb changed to " changed"
+    // and color becomes red 
+
+ </script>
+
+
+
+
+
+
+
+
+
+

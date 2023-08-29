@@ -1,0 +1,103 @@
+<!-- captcha generation by math.round and math.random method
+
+here  when u load webpage onload event call fn - gen_captcha () =>  then 2 random values generated with math.random and multiply it by 10 then
+ we round of this 2 values  to dispaly it on webpage use  
+ str=`enter ${data1}+${data2}`;   //interpolation 
+and pass this to paragraph tag by  document.querySelector("#p1").innerHTML=str;
+
+then on clicking on check button onclick event call check_captcha() function 
+value written inn input box stored in rec by (   rec=document.querySelector("#i1").value;)
+ then check 
+
+if(rec==sum)
+{
+    display msg as correct captcha;
+}
+-->
+
+<html>
+    <body onload="gen_captcha()">        //when web page load 
+        
+        <input type="text" id="i1" >
+        
+        <button onclick="check_captcha()" > check</button>
+
+        <p id="p1"></p>
+    </body>
+</html>
+<script>
+   var sum;
+    function gen_captcha()
+    {
+        console.log(Math);
+       data1=Math.round( 10 *  Math.random());
+        console.log(data1);  
+ 
+        data2=Math.round( 10  *  Math.random());
+        console.log(data2);
+
+        sum=data1+data2;
+        //to dislay user
+        str=`enter ${data1}+${data2}`; // interpolation 
+        console.log(str);
+
+        document.querySelector("#p1").innerHTML=str;  //pass to paragrapgh 
+
+    }
+    function check_captcha()
+    {
+      rec=document.querySelector("#i1").value;    //valuue writen in input box this value stored in rec;
+      if(rec==sum) 
+      {
+        console.log("captcha is correct");
+        document.querySelector("#p1").innerHTML= " correct  captcha ";
+
+      }
+      else
+      {
+        document.querySelector("#p1").innerHTML= "wrong captcha";   //pass msg to paragrapgh tag 
+
+      }
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

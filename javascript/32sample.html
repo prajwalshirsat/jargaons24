@@ -1,0 +1,41 @@
+<!-- getElementById method dom structure -->
+<!-- 
+in this example when u press enter button so onclick event may call function m1() 
+so due to this by getElementById("p1").innerHTML="prajwal SHIRSAT" so content of p1 get changed
+and by line no 22 button b1 style .background ="orange " -->
+<p id="p1">bsdnb</p>
+<p id="p2"> csdnd</p>
+
+<button id="b1" onclick="m1()">
+enter the button
+</button>
+
+<script>
+    function m1()
+    {
+        console.log(document);
+         console.log(document.getElementById("p1"));      //give id in console
+        document.getElementById("p1").innerHTML="prajwAL SHIRSAT";
+        document.getElementById("p1").style.background="black";
+
+        
+        document.getElementById("b1").style.background="orange";
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

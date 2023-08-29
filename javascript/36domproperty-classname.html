@@ -1,0 +1,55 @@
+
+
+<!-- dom property - classname                         v-36 
+if you want to assign multiple css on particular tag so lets create <style></style> tag inside style tag create one 
+class and mention css in that class so in script tag direcly call that class by
+ document.getElementById("rec").className="m1"; 
+
+  // here when u click on button onclick event call myfun and myfun call style tag class m1
+    // so class m1 get applied on h1 ;
+-->
+
+<h1 id="rec" > hello  </h1>
+<h1 id=" rec"> prajwal shirsat</h1>
+
+ 
+<button onclick="myfun()">enter</button>
+
+<style>
+    .m1
+    {
+        font-size: 30px;
+        color: red;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+</style>
+
+<script>
+    function myfun()
+    {
+        console.log(document);
+        console.log(document.getElementById("rec")); ///print  1 st h1 
+        document.getElementById("rec").className="m1";
+    }
+    // here when u click on button onclick event call myfun and myfun call style tag class m1
+    // so class m1 get applied on h1 ;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

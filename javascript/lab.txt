@@ -1,0 +1,195 @@
+1)
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			color: #333;
+			font-family: Arial, sans-serif;
+			font-size: 16px;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		form {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 50px auto;
+			padding: 20px;
+			width: 400px;
+		}
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+		input[type="text"],
+		input[type="email"],
+		select {
+			border: 1px solid #ccc;
+			border-radius: 3px;
+			box-sizing: border-box;
+			display: block;
+			font-size: 16px;
+			margin-bottom: 10px;
+			padding: 5px;
+			width: 100%;
+		}
+		input[type="submit"] {
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 3px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 16px;
+			padding: 10px;
+			width: 100%;
+		}
+		.required {
+			color: #f00;
+			font-weight: bold;
+			margin-left: 5px;
+		}
+	</style>
+</head>
+<body>
+	<form id="registration-form" action="details.html">
+		<label for="name">Name<span class="required">*</span></label>
+		<input type="text" id="name" name="name" required pattern="[A-Za-z\s]{1,}">
+		
+		<label for="mobile">Mobile<span class="required">*</span></label>
+		<input type="text" id="mobile" name="mobile" required pattern="[0-9]{10}">
+		
+		<label for="address">Address</label>
+		<input type="text" id="address" name="address">
+		
+		<label for="email">Email<span class="required">*</span></label>
+		<input type="email" id="email" name="email" required>
+		
+		<label for="gender">Gender<span class="required">*</span></label>
+		<select id="gender" name="gender" required>
+			<option value="">--Select--</option>
+			<option value="male">Male</option>
+			<option value="female">Female</option>
+			<option value="other">Other</option>
+		</select>
+		
+		<label for="dob">Date of Birth<span class="required">*</span></label>
+		<input type="text" id="dob" name="dob" required>
+		
+		<label for="age">Age</label>
+		<input type="text" id="age" name="age" readonly>
+		
+		<label for="marital-status">Marital Status</label>
+		<input type="radio" id="marital-status-single" name="marital-status" value="single">
+		<label for="marital-status-single
+========================================================================================s
+2)
+
+<div id="slider">
+    <img src="image1.jpg">
+    <img src="image2.jpg">
+    <img src="image3.jpg">
+</div>
+
+<div id="slider-controls">
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="pause">Pause</button>
+</div>
+#slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+#slider img {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+#slider img.active {
+    opacity: 1;
+}
+
+#slider-controls {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#slider-controls button {
+    margin: 0 5px;
+}
+
+var images = document.querySelectorAll('#slider img');
+var currentImageIndex = 0;
+var sliderIntervalId;
+
+// set the first image to active
+images[currentImageIndex].classList.add('active');
+
+function startSlider() {
+    sliderIntervalId = setInterval(function() {
+        // remove the active class from the current image
+        images[currentImageIndex].classList.remove('active');
+        
+        // move to the next image
+        currentImageIndex++;
+        
+        // if we've reached the end of the images, start again from the beginning
+        if (currentImageIndex === images.length) {
+            currentImageIndex = 0;
+        }
+        
+        // set the next image to active
+        images[currentImageIndex].classList.add('active');
+    }, 3000);
+}
+
+function stopSlider() {
+    clearInterval(sliderIntervalId);
+}
+
+function pauseSlider() {
+    stopSlider();
+    // remove the active class from the current image
+    images[currentImageIndex].classList.remove('active');
+}
+
+// add event listeners to the buttons
+document.getElementById('start').addEventListener('click', startSlider);
+document.getElementById('stop').addEventListener('click', stopSlider);
+document.getElementById('pause').addEventListener('click', pauseSlider);
+============================================================================
+
+3)
+
+
+var num1 = 10;
+var num2 = 2;
+var result = num1 / num2;
+
+alert("The division of " + num1 + " and " + num2 + " is " + result);
+=============================================================================
+4)
+
+
+
+function myfunc(num1, num2) {
+  var result = num1 * num2;
+  console.log("The multiplication of " + num1 + " and " + num2 + " is " + result);
+}
+
+myfunc(10, 20);
+
+

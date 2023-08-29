@@ -1,0 +1,52 @@
+<!-- 
+values taken in input boxes always considered as striing 
+so convert string to interger by parseint() fun -->
+
+ <input type="text" id="txt1" placeholder="enter no 1">
+ <input type="text" id="txt2" placeholder="enter no 2">
+ <p> </p>
+ <button onclick="bu1()">add</button>
+
+ <script>
+    function bu1()
+    {
+        console.log(document);// select html structure 
+       var rec1= document.querySelector("#txt1").value;  //value writen on input box stored in rec1
+         console.log(rec1);
+         var rec2= document.getElementById("txt2").value;    //value writen on input box stored in rec2
+         console.log(rec2); 
+  
+         var add= parseInt(rec1)+parseInt(rec2);   //to convert string to integer
+          console.log(add);
+         document.querySelector("p").innerHTML=add;  //pass add to paragrapgh tag  so content display on broweser window 
+    }
+ </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

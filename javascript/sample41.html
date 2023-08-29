@@ -1,0 +1,53 @@
+
+<input type="text" placeholder="no1" id="t1">
+<input type="text" placeholder="no2" id="t2">
+<input type="text" placeholder="no3" id="t3">
+<p></p>
+
+<button onclick="bu()">add</button>
+
+<script>
+    function bu()
+    {
+        console.log(document);
+        var r1= document.querySelector("#t1").value;
+       console.log(r1);
+       var r2= document.getElementById("t2").value;
+       console.log(r2);
+
+
+        var r3=  document.querySelector("#t3").value
+       console.log(r3);
+
+
+       var adddd=parseFloat(r1)+parseFloat(r2)+parseFloat(r3);
+       console.log(adddd);
+   
+       document.querySelector("p").innerHTML=adddd;
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

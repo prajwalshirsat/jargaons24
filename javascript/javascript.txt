@@ -1,0 +1,783 @@
+in case of refer function declre only functionname
+
+
+default value of variable in javascript is undefined 
+javascript
+system.out.println();
+system is class  
+out is object of system
+println()- 
+
+
+
+entity which may use directly is fun
+
+if fun used with object it is method
+
+  console.log(`prsnsn ${x}`);   interpolation technique;
+-----------------------------------------
+console.log("HOME LOAN =  ",hl);
+ 
+ msg and value concatination;
+ -----------------------------------------
+
+
+console.log(90=="90")  compare values only
+ ans true 
+
+ if left and right value  same no matter of string and int 
+
+
+
+console.log(90==="90")   error
+
+compare values & data types 
+
+console.log(10=20) error
+cant assign 1 value to another value 
+
+
+
+ console.log(10+`20`)  op- 1020
+ '+' has two roles 
+ "+" is joing and concatination operator
+
+   console.log(10*`20`) multiplication happens;
+
+    console.log(10+`abcdef`) //op- nan=  (not a nummber)
+
+ document.write(` <li>${x}2</li>`) to display without concole
+
+        document.write(` <li>${x}x ${i}= ${x*i}</li>`)
+                         125x 1= 125
+----------------------------------------------------------------
+
+<hr> 
+works as \n 
+
+
+ function add(x,y,z)  //function body //named function 
+
+
+console.log(typeof 10.550000)    //type of to check data type of variable
+
+ console.log(typeof []) //datatype of array is object in javascript
+
+
+ //anonymous fun - function without name
+ //imp for react js 
+ //anonymous fun - function without name
+ //so store function who has no name in var x;
+
+console.log(typeof x)       //op- function 
+storing function in variable so data type is "function"
+
+----------------------------------------------------------
+ document.write(`
+       <li>
+    
+    <input type = 'checkbox'>
+     ${brands[i]}
+     
+     </li>
+     `)             nike
+                    bmw
+                    lamborgini
+
+ ------------------------------------------------------------------
+
+for of loop
+special loop in javascript cannot
+ extract values from objects  
+
+FOR OF (LOOP) extract values only from array
+--------------------------------------------
+
+//   for in  (loop ) generate index of array;
+//FOR IN LOOP CAN EXTRACT  VALUES  FROM OBJECTS ALSO
+
+//MATH IS PREDEFINED OBJECT IN JS
+ //math has built in method
+
+console.log(Math.random())   //return random no
+
+mdnjavasript website
+
+div for box;
+inline css means separate css for separate element
+
+
+if recieving text boxes so data type is string in javascript
+
+getelmentby id (applicable for id only);
+
+
+^ carrot syst=mbol
+
+-------------------------------------------
+
+javascript study
+
+console.log(`praj`);          printing
+ 
+  ()  for function
+    [] array
+    
+    
+    VAR - LOCAL SCOPE VARIABLE  access anywhere
+    LET - LET KEYWORD RESTRICT SCOPE OF VARIABLE OUTSIDE{}
+             cannot access outside of {}
+
+
+ document.write(20+40);        to display content directly on browser window (not in console);
+
+  console.log(`prsnsn ${x}`);   OUTPUT - prsnsn 10  
+ 
+ ${X} - display VALUE OF X IN CONSOLE
+
+console.log(`cube of ${x} is ${y} `); output- cube of 5 is 125 
+
+console.log(3>2)       // RETURN TRUE OR FALSE
+
+console.log(90=="90") //RETRUN TRUE INT =="STRING"
+
+COMPARE INT WITH STRING 
+
+ var user ="prajwal"
+    console.log(user,user.length)  //user.length its property
+    console.log(user.toUpperCase());   //.toUpperCase() it is method 
+
+ console.log(10+`20`)
+        //"+" is joing and concatination operator
+      //op- 1020;
+
+      console.log(10*`20`) //mutiplication happens   
+//op- nan=  (not a nummber) 
+
+
+ console.log(10*`20`) //mutiplication happens      
+--------------------------------------------
+
+prompt() function to ask the user for input
+ var x=prompt("enter a number")     TAKE USER input
+
+ document.write(`<li>${no}x${i}=${no*i}</li>`);
+
+output=                5  x  1 = 5
+
+<hr>        for horizontal line ;
+  <li></li> to represent  CONTENT in list format;
+---------------------------------------------
+function in javascript
+
+syntax     function fnname() //function body
+           {
+
+           }
+           fnname()        //fun calling 
+
+----------------------------------------
+with return function 
+ function sub(x,y)
+      {
+        return(`${x-y}`);
+      }
+ var ans = sub(200,100); // ans variable catch value of with return fun i.e sub;
+
+      console.log(ans);
+------------------------------------------- 
+
+typeof function is used to check datatype
+ console.log(typeof [])
+//datatype of array is object in javascript
+
+datatype   10    -   number 
+          "ssss" -  string 
+           []    -  object
+---------------------------------------------------
+anonymous function
+<script>
+    //imp for react js 
+ //anonymous fun - function without name
+ //so store function who has no name in var x;
+ //anonymous function get stored in variable 
+
+ var x=function()    //assign fun to variable
+ {
+    console.log("dndjdjddjdjhjdh")
+ }
+console.log(typeof x)       //op- function 
+ 
+x() //    use variable as function  //function calling 
+   //anonymous function calling with help of variable 
+</script>
+----------------------------------------------
+arrow function syntax
+
+var p = ()=>          //assigning fun to variable p
+{
+   //statements
+}
+p();      // function calling variable use as fun
+--------------------------------------------
+with return arrow function 
+var q=()=>
+{
+  return(10+20);
+}
+console.log(ans=q()); // fun data >var q> ans
+
+// fun data get stored in  >var q> then stored in  ans
+
+--------------------------------------------------
+imp- 
+if you give function defination(calling)  manytimes so in javascript
+function whose body is at last  = this function will gwt execute 
+multiple times
+-------------------------------------------------------------
+(//button tag should be outside script tag)
+<button onclick="myfuction()">enter</button> 
+<!-- onclick is event  -->
+so onclick event may call myfunction 
+=====================================================
+
+<!-- //onmouseover is event and it will call myfunction  -->
+<!-- // when mouse comes on div bloc  -->
+<!-- random value generated in console box -->
+-----------------------------------------------------
+
+onfocus is event & onblur is also an event 
+syntax      
+           <input type="name" onfocus="m1()" onblur="m2()">
+           <script>
+           var m1= function ()
+         {
+          console.log(`prajwal`);
+        }
+           var m2 =function ()
+        {
+          console.log(`shirsat`);
+        }
+// when u click on box then display onfocus=prajwal
+// when u click outside box then display onblur = shirsat 
+
+=======================================
+array declaration 
+var a1=[1,2,3,4,5,6782,7,8,9,10];
+ var a2=[5];
+
+to print array in the form of checkbox
+document.write(`
+       <li>
+    
+    <input type = 'checkbox'>
+     ${b[i]}
+     
+     </li>
+     `)
+------------------------------------------
+
+object= to store unsimiliar type of data in one entity
+var p1={
+    name: "prajwal",
+    rolno: 110,
+    price:10000,
+  }
+  so typeof p1    -   object
+=====================================
+
+loops
+ 
+   1) for of loop
+           // for of loop
+            // special loop in javascript cannot extract values from objects  
+            // extract values only from array
+//CANNOT FETCH VALUES FROM OBJECTS
+
+for(a of [10,20,30,40,50]) || obj- for (a of { name:"prajwal" ,age: 110})
+
+2)      for in loop
+        
+//   for in  (loop ) generate index of array; as 1 2 3 4 5 6 not direct values
+  //FOR IN LOOP CAN EXTRACT  VALUES  FROM OBJECTS
+
+for(c in [12,3,4,5,6,7,8,8,9,4,34,33])  
+
+ obj - for (c in { name:"prajwal" ,age:"23", ron:"1100", address:"pavan nagar nasik"})
+
+--------------------------------------------------
+Math  object 
+ //MATH IS PREDEFINED OBJECT IN JS
+ //math has built in method 
+
+ console.log(Math, typeof Math )     //op math -object
+ console.log(Math.pow(3,4))          //3^4
+ console.log(Math.round(1.569))        //op- 2    //round up to high nearest value
+ console.log(Math.floor(1.569))         //1       //round up to less value 
+ console.log(Math.random())
+ console.log(Math.SQRT2)            //squareroot of 2
+ console.log(Math.cbrt(729))            //cube root of 729=9
+ 
+console.log(Math.ceil(1.59))        //2   round up greatest value 
+--------------------------------------------
+ this keyword 
+ <!-- this is a object represent current element  -->
+
+
+  <!-- to change internal content of html tag  -->
+   myvar1.innerHtml="submit";    // to change the content of html tag 
+                                    //   so replacement   enter=submit
+                                   //   hello i am prajwal =submit              
+ </script>
+ -----------------------------------------------
+ <!-- prompt = to take user input  need variable  -->
+<!-- alert box = to display msg -->  
+<!-- confirm box = detlete ,logout,submit decision making  need variable  ( confirm box -return value) -->
+
+
+ prompt alert confirm  box 
+ 
+ alert("hello jarvis");         // directly give msg in alert box
+
+//confirm box 
+ var p= confirm("do you want t submit????");     // confirm box return value so store it in variable 
+ console.log(p); 
+  if(ans ) //true                   // if press ok= value is (true)
+  {                                   //  if press cancel = value if false
+     console.log("submit"); 
+  }                              
+   else      //false 
+   {console.log("submit");                            
+   }
+ 
+ var rec= prompt("enter no");    // prompt box to take user input  u can pass default value in prompt box 
+ //  var rec= prompt("enter no",2000);    u can pass default value which can be changed   
+ console.log(rec) ; 
+
+=================================
+
+let variable = restricted within functional and block scope 
+var variable = restricted within functional scope ,not restricted in block scope 
+variable = not restricted in functional & block scope    (public )
+ 
+let variable = redeclaration is not alowed
+var variable redeclaration allowed 
+
+if() 
+{                           block scope 
+             rec1       (global var)
+        var  rec2
+        let  rec3 
+        const rec4
+}
+        rec1                               accessible outside block scope 
+        var  rec2                          accessible outside block scope 
+        let  rec3                    not   accessible outside block scope 
+        const rec4                   not   accessible outside block scope   
+ 
+===========================================================
+
+function myfun() 
+{                                           //function scope 
+                    num1         (global var)
+             var    num2
+             let    num3
+             const   num4
+               
+}
+                num1                       accessible outside functional scope       
+         var    num2                 not   accessible outside functional scope 
+         let    num3                 not   accessible outside functional scope 
+         const   num4                not   accessible outside functional scope 
+               
+variable defined with let keyword = redeclaration not allowed 
+variable defined with var  keyword = redeclaration  allowed 
+
+=========================
+array join method 
+convert integer array to string array
+
+===========================================
+
+<!-- innerText, innerHTML ,value property -->
+<!-- use to change content in html tags  -->
+
+<!-- form elements need  (value property)              non form elements (innerHTML,innerText)
+ text                                              p tag,div tag,h1 tag, span tag 
+ radio
+ checkbox
+ textarea
+ password
+
+ innerHTML  display content as per applied html tag
+ innertext display content as it is. for ex= output =<b>  sbumit </b>
+
+ input type boxes need value property 
+ -->
+===============================================================
+<!-- document  object model structure   = collection of nodes(tags)+ textnode (tag with content)-->
+<!-- document  object model structure  -->
+<!-- browser interpreter convert html code in dom structure -->
+<!-- document (object ) is used to manupulate inside dom structure -->
+<!-- means u can add,remove,change content of html tags ,apply diffrent style on html tag  -->
+
+-------------------------------------------------------------
+ <!-- getElementById method of dom structure used to change the content of html tag ,change the style -->
+<!-- getElementById method select 1 st element only if two elements having same id -->
+=================================================================================
+
+
+<!-- getelementbyClassName()
+     getelementbyClassName() method can select multiple classes having same name in entire webpage 
+     this thing is not possible by getelementbyid() -(only i id at at time )
+
+     getelementbyClassName() generate array and store multiple classes
+     as per index so by using index u can manupulate data ;
+                                     cls name 
+      document.getElementsByClassName("p1")[0].innerHTML="mohit"; //change content of 0 index
+
+ -->
+ ------------------------------------------------------------------------------------
+
+        console.log(document);  //get entire web page as document 
+ --------------------------------------------------------------------
+ <!-- getelementsbytagname dom method
+select multiple tags of same type in entire web page 
+and generate array as (html collection ) and store each tag as per index 
+so we can manupulate and change content as per index -->
+                               tg name
+ document.getElementsByTagName("h1")[0].innerHTML="neirobi";
+
+
+     var rec =document.getElementsByTagName("h1");  //for code reusability; store array in rec 
+
+     rec[1].innerHTML="tokyo";
+
+
+----------------------------------------------------------
+<!-- getelementsbyname   dom method 
+ 
+ used for form elements 
+    this method is used if elements have same name so this method generate nodelist
+    (it is array) and store elements as per index so by using index
+    u can manupulate data 
+-->
+syntax
+ <form action="">
+    <input type="text"name="p1" placeholder="shirt">
+    <input type="number" name="p1"  placeholder="price">
+    <input type="button"  onclick="butt()" value="enter">
+
+ </form>
+
+var rec= document.getElementsByName("p1");
+        rec[0].value="garment";
+        rec[1].value=3000;
+
+form element so use only value property
+==================================================================
+!-- dom property - classname v-36 
+if you want to assign multiple css on particular tag so lets create <style></style> tag inside style tag create one 
+class and mention css in that class so in script tag direcly call that class by
+ document.getElementById("rec").className="m1"; 
+
+  // here when u click on button onclick event call myfun and myfun call style tag class m1
+    // so class m1 get applied on h1 ;
+-->
+==========================================================================
+<!-- dom method query selector -->
+<!-- you can select elements by tag name,id,class -->
+<!-- if multiple tags are threr so this method select only 1 st tag at a time
+ 
+querySelector("p")          //to select tag
+querySelector("#h1")           //to select id
+querySelector(".divdata")      // to select class
+
+1 drowback is this method select only first element 
+-->
+======================================================================
+<!-- dom method -queryselectorall      &create nodelist (array)    -->
+<!-- queryselectorall - select all elements(of specific cateory ) &create nodelist (array) -->
+<!-- and store elements as per index -->
+<!-- so u manupulate data as per index 
+ =========================================
+
+ dom methods to slector elements
+
+ getElementsById          =          select 1 st element (one element at a time )
+ getElementsByClassName   =    select multiple tags having same class name  only ;  generate array(node list);
+ getElementsByTagName     =   select multiple tags having same categiry of tags ; generate array(node list);
+ getElementsByName        = (form tag)  select multiple element having same  name  only; generate array(node list);
+ queryselector             =   select 1 st element (class,id,tag name)
+ queryselectorall          =   select multiple elements of specific category (class ,id,tag name) // generate nodelist 
+-->
+syntax 
+         console.log(document.querySelectorAll("h1")); // create nodelist   for h1 tag 
+       console.log(document.querySelectorAll("#p1"));      // create nodelist   for id 
+     console.log(document.querySelectorAll(".divv"));              // create nodelist for class  
+
+        document.querySelectorAll("h1")[0].innerHTML="prajwal";       //for tag 
+        document.querySelectorAll("#p1")[0].innerHTML="para1";          //for para
+        document.querySelectorAll(".divv")[0].innerHTML="div1";        //for class 
+=================================================================================
+
+<!-- dom method  
+    getAttribute(), setAttribute(),
+    hasAttribute(),removeAttribute()
+
+      hasAttribute() =  check existence of attribute(width,id) ; (return value)
+     getAttribute()  =  return value 
+      setAttribute() =  to resize image& update (properties)   synatx =document.querySelector("img").setAttribute("width","300px") ;
+      removeAttribute() = to remove attribute  
+ -->
+ =============================================================
+<!--          
+           parseint() fun -->
+values taken in input boxes always considered as striing 
+so convert string to interger by parseint() fun -->
+
+ 
+ var rec1= document.querySelector("#txt1").value;  //value writen on input box stored in rec1
+         console.log(rec1);
+
+parseint syntax =    var add = parseInt(rec1) + parseInt(rec2); 
+
+----------------------------------------------------------------
+<!-- parseFloat fun & tofixed() function
+values taken in input boxes always considered as striing 
+so convert string to float  by parseFloat() fun --> 
+
+tofixed()  function  used to restrict nos after decimal  -->
+<!-- console.log(add.toFixed(2));  only two digits after decimal -->
+
+--------------------------------------------------------
+
+ <!-- password vicible simple approach 
+
+logic when u click on checkbox type of password may get changed to text
+
+checked property is used to check whether checkbox is click or unclick
+-->
+-----------------------------------------------------------
+
+ <!-- nan= not a number
+    -------------------------
+     isnan() function  = inbuilt js fun 
+     isnan("hello") -when u pass string return true
+     isnan(70) - when u pass integer return false
+--------------------------------------------
+ string * integer= nan (not a number)
+ when u dont want to allow this so use isnan fun;
+ 
+ when u perform improper mathematical operation so 
+ not a number generated 
+-->
+-------------------------------------------------------------
+
+<!-- map function
+to save code lines and print desired though array use map function -->
+ syntax
+      a2=a1.map(x => x*x ); 
+/*   a1   =    previous array 
+     map         is function
+     x    = variable   to iterate all values of a1 array
+     =>       arrow function
+   x*x       to make square
+   all this result store into new array a2;
+   */
+
+   ================================
+
+   // for in loop
+ //for(  output  in   input)
+ for(  index     in   arr)
+ {
+    console.log(index , arr[index]);
+ }
+=====================================
+for each loop
+var arr2=["prajwal","mohit","shubham","stark","jarvis"];
+
+// syntax      //here is anonymous fn 
+
+
+// arrayname.foreach(function(value,index){})
+
+   arr2     .forEach(function(value,index){
+          console.log(value,index);
+   })
+   ========================================
+<!-- array filter function -->
+   newarray=oldarray.filter(fn name)
+
+define fun 
+  function name(val)
+  {
+
+  }
+------------------------------------
+
+<!-- EVENT LISTENERS   ADD EVENT WHEN U CLICK ON ADD BUTTON
+AND REMOVE EVENT WHEN U CLICK ON REMOVE BUTTON
+synatx
+   para.addEventListener("mouseover",function(){})
+
+   element/var.addEventListener("event", function);
+ 
+
+ refrence fun always written outside
+--> 
+-------------------------------------------------------------------------------------------------------------------
+<!-- DOM NODE MANUPULATION EXAMPLE
+ i.e adding in node & removing from node 
+storing username in unordered list 
+
+
+1)  created elements at run time create li 
+2)   createtextnode to asign assign values  to that created element(li)
+3)   append to empty text node 
+-->
+ --------------------------------------------------------
+nextele=first.nextElementSibling.style.display; 
+to check next element display 
+ <!-- display  mode  :  none  =   hide 
+                     block  =     open /show -->
+===========================================================
+<!-- <SCRipt>
+             OBJECT - STORING UNSIMILIAR DATA IN ONE ENTITY;
+             OBJECT VALUES EXTRACT BY FOR IN LOOP 
+
+             FOR IN LOOP -      FOR(   VARIABLE(FOR INDEX)      IN       INPUT     )
+                                FOR (      INDEX                IN      STUDENT    )
+                       PRINTING-  C.L(    INDEX,            STUDENT [INDEX]       )           -->
+--------------------------------------------------------
+
+javascript  -   eval - string function  to perform mathematical operation
+
+ans= eval(str)
+if(str= 300+50-2) so eval fun (evaluate this string ) and 
+store it in ans variable 
+
+css property 
+ z index   to determine which box must be kept upward 
+ 
+ z index :3  (uppward)
+ z index:2  (lower )
+MARGIN AUTO FOR CENTER
+LEFT 0  : TO START FROM LEFT ZERO 
+
+BACKGROUND(0,0,0,0.5) HERE 0.5 IS OPACITY
+
+=======================================================================
+
+
+window object has 1 function  - setTimeout function()
+
+which is used to change content after some time(miliseconds)
+
+syntax  type 1 to defin setTimeout fun-                      by   anonymous fun
+
+         window.setTimeout(task function(){}     ,  delay in miliseconds )   )        
+        window.setTimeout( function(){}  ,   3000);
+-------------------------------------------------------
+type 2) method 2 to defn setTimeout fn                           by refer fn 
+windows.setTimeout(changecont , 3000) // here  changecont is refer fn & udf 
+
+so defn changecont function
+---------------------------------------
+type 3)
+      windows is optional 
+      setTimeout( function(){}  ,   3000);
+===============================
+object creation synatx
+       objname   =   new    className
+ 
+       remote     =  new    tv()
+datatype  of class= function
+
+variable defined in class is called properties;
+======================================================================================================
+in case of refer function declre only functionname
+----------------------------------------------------------------------------------
+
+
+<!-- array filter function -->
+
+<script>
+
+ var oldage=[15,16,18,54,33,32];
+
+ console.log(oldage);
+   
+//    newarray=oldarray.filter(fn name)
+       newage =  oldage  . filter (check);
+
+    function check(val) //define fn and pass parameter
+    ----------------------------------------------------------------------
+<!-- EVENT LISTENERS   ADD EVENT WHEN U CLICK ON ADD BUTTON
+AND REMOVE EVENT WHEN U CLICK ON REMOVE BUTTON
+synatx
+   para.addEventListener("mouseover",function(){})
+
+   element/var.addEventListener("event", function);
+                    function 
+
+--> 
+---------------------------------------------------------------------------
+
+
+var a=aray.join("/");   //individual array elements join by / (slash); and store that output in variable a ;
+// var a is variable
+-------------------------------------------------------------
+
+TOTAL 60 VIDEOS DONE 
+
+NOW - EMICALCULATOR
+      PPF CALCULATOR
+      TICKET BOOKING SYTSEM 
+      SPREAD operator
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

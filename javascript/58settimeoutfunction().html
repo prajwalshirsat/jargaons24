@@ -1,0 +1,101 @@
+
+<!--window object has 1 function  - settimeout function()
+    
+    setTimeout fun = used to change content after some miliseconds -->
+<html>
+    <body>
+        <center>
+        <button onclick="changecontent()"   style="width: 500px; padding-top: 150 px;">change content</button>
+
+        <p id="p1"> prajwal kishor shirsat</p>
+
+
+    <input type="text" placeholder="enter" id="i1">
+
+    <button onclick="check()">validate</button>
+    
+    <h1 id="h1">.........</h1>
+
+    </center>
+    </body>
+
+</html>
+
+<script>
+
+ function changecontent()
+ {
+    console.log(document);
+
+    console.log(window);  // print windows object 
+
+
+    // // method 1 to define setTimeout fun  - annonymous function 
+    // window.setTimeout(task function(){}     ,  delay in miliseconds )   
+
+    // window.setTimeout( function(){
+
+    //     document.querySelector("#p1").innerHTML="mohit patil"
+    //     document.querySelector("#p1").style.border="solid"
+    //     document.querySelector("#p1").style.background="red"
+
+    // } ,3000);
+
+    // method 2 to defn setTimeout fn by refer fn 
+                    // userdefined fn 
+       setTimeout(  changeit       ,3000)   // changeit is refer fn  so defn outside & windows word is op tional
+ }
+
+ function changeit()
+ {         
+            // this changes applied from 3000 miliseconds after clicking button
+         document.querySelector("#h1").innerHTML="mohit patil"
+         document.querySelector("#h1").style.border="solid" 
+         document.querySelector("#h1").style.background="red"
+ }
+
+ function check()
+ {
+                       console.log(window);
+
+                      window.setTimeout(function(){
+
+                     str=document.querySelector("#i1").value;  //store data enter in input box in variable 
+
+
+                     console.log(str);
+
+                    if(str   !="")
+                    {
+                        document.getElementById("h1").innerHTML="valid data entered....."
+                    }
+
+                    else{
+                      document.getElementById("h1").innerHTML="invalid data entered....."
+
+                    }   }   ,  2000)
+                
+ }
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

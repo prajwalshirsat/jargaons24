@@ -1,0 +1,41 @@
+<!-- getelementsbyname   dom method 
+ use  for form tag 
+    this method is used if elements have same name so this method generate nodelist
+    (it is array) and store elements as per index so by using index
+    u can manupulate data 
+
+form element so use only value property
+
+-->
+ <form action="">
+    <input type="text" name="p1" placeholder="shirt">
+    <input type="number" name="p1"  placeholder="price">
+    <input type="button"  onclick="butt()" value="enter">
+
+ </form>
+<script>
+    function butt()
+    {
+        console.log(document);  //get entire web page as document 
+        console.log(document.getElementsByName("p1")); // array print 
+        var rec= document.getElementsByName("p1");  //rec becomes object   store array in rec 
+        console.log(typeof rec);             //object
+        rec[0].value="garment";
+        rec[1].value=3000;
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

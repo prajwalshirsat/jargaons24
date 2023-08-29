@@ -1,0 +1,65 @@
+<!-- dom method -queryselectorall      &create nodelist (array)    -->
+<!-- queryselectorall - select all elements(of specific cateory ) &create nodelist (array) -->
+<!-- and store elements as per index -->
+<!-- so u manupulate data as per index 
+ =========================================
+
+ dom methods to slector elements
+
+ getElementsById          =          select 1 st element
+ getElementsByClassName   =    select multiple tags using class only generate array(node list);
+ getElementsByTagName     =   select multiple tags using tags  generate array(node list);
+ getElementsByName        =   select multiple tags using name  only generate array(node list);
+ queryselector             =   select 1 st element (class,id,tag name)
+ queryselectorall          =   select multiple tags (class ,id,tag name) generate array 
+-->
+
+<h1>hello</h1>
+<h1>person</h1>
+
+<p id="p1">bdbjkbj</p>
+<p id="p1">bbfjjebd</p>
+
+<div class="divv">bdbweb</div>
+<div class="divv">dbjfewio210</div>
+
+<button onclick="bun1()">enter </button>
+
+<script>
+    function bun1()
+    {
+        console.log("caha");
+        console.log(document);  //represent entire web page as document 
+         console.log(document.querySelectorAll("h1")); // create nodelist  for h1 
+     document.querySelectorAll("h1")[0].innerHTML="prajwal";    //tag  (array generated for tag) 
+        document.querySelectorAll("h1")[1].innerHTML="shirsat";
+  
+       console.log(document.querySelectorAll("#p1"));      // create nodelist  for id 
+        document.querySelectorAll("#p1")[0].innerHTML="para1";    //id 
+        document.querySelectorAll("#p1")[1].innerHTML="para2";
+
+        console.log(document.querySelectorAll(".divv"));              // create nodelist  for class 
+        document.querySelectorAll(".divv")[0].innerHTML="div1";      //class 
+        document.querySelectorAll(".divv")[1].innerHTML="div2";
+
+        document.querySelectorAll(".divv")[0].style.background="red";
+        document.querySelectorAll(".divv")[1].style.background="red";
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

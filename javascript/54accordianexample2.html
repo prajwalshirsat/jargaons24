@@ -1,0 +1,122 @@
+
+<!-- accordian example 2ND TYPE                                                   
+   LOGIC-    when u click on h1 so hide all paragrapgh by  hide_para function
+        //   so then check next element display by curele.nextElementSibling funtion     
+                                                           
+                                                                                     -->
+ 
+<html>
+    <HEad>
+                <style>
+            p,h1{
+                width: 300px;
+                border: 1px solid; 
+                margin: 0 auto;
+                padding: 10px ;
+                background-color: bisque;
+            }
+
+        </style>
+          </HEad>
+
+        <body onload="hide_para()"> 
+        <h1 onclick="show_para(this)">section 1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus cum sunt molestiae fugiat! Nemo aspernatur fugiat, voluptatum ullam animi dolor in, laborum nam beatae numquam ipsam, impedit temporibus? Incidunt, sapiente.
+
+        </p>
+        <h1  onclick="show_para(this)">section 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quo cumque aliquam pariatur a repellendus nam quia, facilis quaerat temporibus cum consectetur iste. Tempora quae voluptatibus cupiditate, a quidem expedita?
+
+        </p>
+        <h1   onclick="show_para(this)" > section 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta ipsam cumque vel veniam! Fuga harum aliquam porro aspernatur nam. Perspiciatis vero facere praesentium, perferendis explicabo laboriosam! Voluptatum, pariatur laborum!
+
+        </p>
+    </body>
+</html>
+
+<script>
+    function hide_para()
+    {
+        console.log(document.querySelectorAll("p")); //generate nodelist of paragrapghs 
+        para=document.querySelectorAll("p");
+       for(i=0;i<para.length;i++)
+       {
+        console.log(para[i]);
+        para[i].style.display="none"; //NONE - HIDDEN 
+       }
+    }
+ /* The show_para() function is called when a header is clicked. It takes the clicked header element (curele) as a parameter
+  and  checks the display property of the next sibling element (curele.nextElementSibling). i.e (para)
+  If the next sibling's display property is none,    i.e (para)
+the function sets it to block, which reveals the associated content section.
+ If the next sibling's display property is not none, the function sets it to none,
+  which hides the associated content section.
+ */  
+    function show_para(curele)
+   { //     
+    //      CURELE=  H1
+    //      nextElementSibling =PARAGRAPGH TAG
+ 
+
+
+         console.log(curele);
+           hide_para();               //slight change - ****- when u click on h1 so hide all paragrapgh by hide_para function
+        //   so then check next element display by curele.nextElementSibling funtion     
+       
+       
+         ans=curele.nextElementSibling.style.display;
+      
+      
+        console.log( ` next element ${ans}`);  //CHECK VALUE  OF NEXT ELEMENT  
+       
+        // IF U SELECT 1 ST H1 SO BY nextElementSibling 2 ND element is paragrapgh  DIPLAY IS IN BLOCK MODE
+        if(ans=="none")
+        {     
+            curele.nextElementSibling.style.display="block";
+        } 
+        
+      
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

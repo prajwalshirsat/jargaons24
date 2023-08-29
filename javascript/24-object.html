@@ -1,0 +1,35 @@
+<script>
+    //  object 
+     //storing unsimilar type of data in one entity   in curly bracket{}
+  var products = {
+    name: "jeans",
+    price : 1000, 
+    path:"https://rukminim1.flixcart.com/image/416/416/xif0q/cases-covers/back-cover/a/b/i/nz-vio-y16-hbbu-nainz-original-imaggz7gefgmegc3.jpeg?q=70"
+    
+}
+console.log(typeof products)         //it is object
+
+console.log(products)
+console.log(products.price);
+console.log(products["price"]);
+
+document.write( `<div>
+    
+    <img src="$(products.path)" alt=" ">
+    <h2>${products.price}</h2>
+    <p>${products.name}</p>
+    </div>
+    `)
+
+
+
+</script>   
+
+<style>
+    div{
+        width: 300px;
+    }
+    img{
+        width: 100%;
+    }
+</style>

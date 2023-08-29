@@ -1,0 +1,38 @@
+
+<!-- getelementbyClassName()
+     getelementbyClassName() method can select multiple classes having same name in entire webpage
+     this thing is not possible by getelementbyid() -(only i id at at time )
+
+     getelementbyClassName() generate array and store multiple classes
+     as per index so by using index u can manupulate data ;
+
+ -->
+
+ <p class="p1">prajwAL</p>
+ <p class="p1">SHIRSAT</p>
+
+ <button onclick="myfun()">press me </button>
+
+<script>
+    function myfun()
+    {
+        // console.log("called");
+      console.log(document);
+      console.log(document.getElementsByClassName("p1"));  // create array node list 
+
+      document.getElementsByClassName("p1")[0].innerHTML="mohit"; //change content of 0 index
+      document.getElementsByClassName("p1")[1].innerHTML="patil";  //change content of 1 index
+      document.getElementsByClassName("p1")[1].style.background="red";
+
+
+         }
+</script>
+
+
+
+
+
+
+
+
+

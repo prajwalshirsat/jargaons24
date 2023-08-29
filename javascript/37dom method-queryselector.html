@@ -1,0 +1,53 @@
+<!-- dom method query selector -->
+<!-- you can select elements by tag name,id,class -->
+<!-- if multiple tags are threr so this method select only 1 st tag at a time
+ 
+querySelector("p")          //to select tag
+querySelector("#h1")           //to select id
+querySelector(".divdata")      // to select class
+
+1 drowback is this method select only first element 
+-->
+
+<p>test1</p>
+<p>test2</p>
+
+<h1 id="h1">ndbd</h1>
+<h1 id="h1">nnvsdmns</h1>
+
+<div class="divdata">vnkfkewjo</div>
+<div class="divdata">euyrywr98390218</div>
+
+<button onclick="b11()"> entering </button>
+
+<script>
+    function b11()
+    {
+        console.log(document);
+        console.log(document.querySelector("p"));   // print p tag 
+        document.querySelector("p").innerHTML="porchemaccan";
+
+     console.log(document.querySelector("#h1"));   //print h1 id
+     document.querySelector("#h1").innerHTML="bmw m5 ";
+
+     console.log(document.querySelector(".divdata"));   //class 
+     document.querySelector(".divdata").innerHTML="mercedes";
+
+     document.querySelector(".divdata").style.background="tomato";
+
+
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+

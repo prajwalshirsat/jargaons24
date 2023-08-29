@@ -1,0 +1,75 @@
+
+<!-- EVENT LISTENERS   ADD EVENT WHEN U CLICK ON ADD BUTTON
+AND REMOVE EVENT WHEN U CLICK ON REMOVE BUTTON
+synatx
+   para.addEventListener("mouseover",function(){})
+
+   element/var.addEventListener("event", function);
+                    function 
+
+--> 
+
+
+
+<button  class="b1" onclick="addevent()">addevent</button>   //1
+<button class="b2" onclick="removeevent()">remove event </button>           //7
+<!-- //when u click on remove button mouseout event get removed -->
+<p id="para">prajwal test</p>
+
+<script> 
+
+function addevent() //2
+{
+   para=document.querySelector("#para");  //store paragrapgh in variable para;       //3
+  // console.log(para);
+
+   para.addEventListener("mouseover",function(){    //anonymous funnction       //4
+    console.log("mouser called succesfully");
+   })
+
+   para.addEventListener("mouseout",myfun); //1             //5
+             //here myfun is refrence
+
+             
+}
+function removeevent()                       //8
+{
+    para=document.querySelector("#para");          //9
+    //console.log(para);
+
+    para.removeEventListener("mouseout",myfun);         //10
+     //this will detach mouseout event 
+}
+
+function myfun() //2                                                    //6
+{  console.log("mouse out function called");
+
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

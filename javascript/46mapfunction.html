@@ -1,0 +1,53 @@
+<!-- map function
+to save code lines and print desired though array use map function
+
+use existing array and modify content and store in new array -->
+
+<script>
+ var a1=[1,2,3,4,5,6,7,8,9];
+console.log(a1);
+
+a2=a1.map(  x  =>   x*x); 
+/*   a1   =    previous array 
+     map         is function
+     x    = variable   to iterate all values of a1 array
+     =>       arrow function
+   x*x       to make square
+   all this result store into new array a2;
+   */
+console.log(a2);
+
+userrec=[10,-3,8,-90,-80];
+//needed op- [-10,3,-8,90,80];
+
+
+              /*  // to avoid traditional way
+              for(i=0;i<userrec.length;i++)
+             {
+              if(userrec[i]<0)
+              {
+               r1[i]=-userrec[i];
+              }
+
+              else  if(userrec[i]>0)
+               {
+              r1[i]=-userrec[i];
+               }
+               console.log(r1);
+              */
+
+newrec=userrec.map( y   =>   -y);
+console.log(newrec);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+

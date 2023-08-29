@@ -1,0 +1,70 @@
+<img src="1.jpg" alt="" width="200px" height="300px">
+ 
+<button onclick="hasatt()">hasattribute</button>
+<button onclick="setatt()">setattribute</button>
+<button onclick="getatt()">getAttribute</button>
+<button onclick="removeatt()">removeAttribute</button>
+
+<script>
+    function hasatt()
+    {
+        console.log(document.querySelector("img"));  // tocheck existence 
+        var ans = document.querySelector('img').hasAttribute('width');
+        console.log(` width ${ans}`);
+
+        var ans2 = document.querySelector('img').hasAttribute('height');
+        console.log(` height ${ans2}`);
+        
+    }
+    function setatt()
+    {
+    
+        console.log(document.querySelector("img"));
+        document.querySelector("img").setAttribute("width","300px") ;
+        console.log("set attribute width 300 px");
+    }
+    function getatt()
+    {
+        console.log(document);
+        console.log(document.querySelector("img"));
+        var   gtt= document.querySelector('img').getAttribute('width')
+        console.log(`width ${gtt}`);
+
+        var   gtt1= document.querySelector('img').getAttribute('height')
+        console.log(`height ${gtt1}`);
+        
+    }
+    function removeatt()
+    {
+        console.log(document);
+        document.querySelector('img').removeAttribute("width")
+;
+console.log("width removed properly");
+    }
+
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<html>
+    <body style="background-color: rgb(0, 183, 97);">
+       <center> 
+           <table border="1"  width="200" style="border-collapse: collapse;">CALCULATOR 
+           
+            <style>
+                table
+                {  background-color: rgb(163, 39, 97);
+                    width: 200px;
+                    padding: 10px;
+                 cursor: pointer;
+                }
+                
+                table td:hover{       
+                    background-color: cadetblue;
+                }  
+            </style>
+           <tr  >
+            <td  colspan="4"><input type="text" id="i1" width="200" ></td>
+           </tr>
+           <tr>
+            <td onclick="get_value(this)">1</td>
+            <td onclick="get_value(this)">2</td>
+            <td onclick="get_value(this)">3</td>
+            <td onclick="get_value(this)">+</td>
+           </tr>
+           <tr>
+            <td onclick="get_value(this)">4</td>
+            <td onclick="get_value(this)">5</td>
+            <td onclick="get_value(this)">6</td>
+            <td onclick="get_value(this)">-</td>
+           </tr>
+           <tr>
+            <td onclick="get_value(this)">7</td>
+            <td onclick="get_value(this)">8</td>
+            <td onclick="get_value(this)">9</td>
+            <td onclick="get_value(this)">*</td>
+           </tr>
+           <tr>
+            <td onclick="get_value(this)">0</td>
+           <td onclick="reset()" >C</td>
+           <td onclick="set_value()">=</td>
+           <td onclick="get_value(this)">/</td>
+        </tr>
+
+           </table>
+    </body>
+
+</center>
+</html>
+<script>
+    str="";
+    function get_value( current)
+    {
+     //  console.log(current);   // to print current element
+     //  console.log(current.innerText); // print  current element innertext
+      
+       str= str + current.innerText // store (append )current ele in str variable
+      console.log(str);   // to print in console
+
+       document.querySelector("#i1").value=str;  // to show current element who is appended in str - to show in input box
+
+    }
+    function set_value()
+    {
+        if(str!="") // if str is not equal to null;
+        {
+            ans= eval(str); // evaluate str as per mathematical operation and store in ans 
+            console.log(ans);
+
+            document.querySelector("#i1").value=ans;  // to display it in input box
+        
+            str=ans; // so string get changed to ans and display in console
+
+        }
+    }
+ 
+     function reset()
+     {
+        document.querySelector("#i1").value=0; //set input box as 0
+
+        str="" // set string to null;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+

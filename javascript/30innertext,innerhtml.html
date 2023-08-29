@@ -1,0 +1,54 @@
+
+<!-- innerText,innerHTML,value propertyv-30 -->
+
+
+<p style="background-color: antiquewhite; border: solid;" onclick="p1(this)"> hello prajwal </p>
+ 
+<h1 style="background-color: blueviolet; width: 500 px; border: solid;" onclick="p1(this)">united stated of ameria</h1>
+
+
+<input type="number" width="300 px" style="background-color: chartreuse; " onclick="p2(this)">vvh
+
+
+<script>
+
+ function p1(a1)
+ {
+    console.log(a1);
+    console.log( typeof a1);
+
+    a1.innerHTML="<b>changed the content </b>"; 
+    // a1.innerText="<b> changed the content </b>"
+    
+    
+   //  innerHTML =  display content as per applied html tag'
+   //  innertext=  display content as it is ;
+
+ }
+ function p2(a2)
+ {
+    console.log(a2);
+    console.log( typeof a2);
+
+    a2.value=10;
+
+ }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

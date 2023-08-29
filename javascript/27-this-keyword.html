@@ -1,0 +1,47 @@
+  
+  <!-- this is a object represent current element  -->
+  <!-- to change internal content of html tag  -->
+ <html>
+    <head>prajwak</head>
+    <body>
+        
+        <button onclick="myfun(this)">ENTER</button>
+        <p onclick="myfun(this)">hello i am prajwal</p>
+    </body>
+    <script>
+        function myfun(myvar1)             //to catch this parameter 
+        {
+            console.log(myvar1);
+            console.log(typeof myvar1);
+            myvar1.innerHtml="submit"; 
+        }  
+       // to change the content of html tag 
+                                    //   so replacement   enter=submit
+                                   //   hello i am prajwal =submit              
+ </script>
+ </body>
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

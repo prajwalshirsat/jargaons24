@@ -1,0 +1,93 @@
+ 
+ <!-- display  mode  :  none  =   hide 
+                     block  =     open /show -->
+<html>
+    <body onload="hidepara()">
+        <h1 onclick="show(this)">section 1</h1>
+        <p >
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo ipsa fuga beatae? Labore ullam, tempora similique aliquam delectus eveniet quaerat optio, repudiandae vel tenetur cum vero dignissimos harum fugit deleniti.
+
+        </p>
+        <h1 onclick="show(this)">section2</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nulla voluptate omnis quidem dolore perspiciatis maiores? Numquam tempore porro laborum excepturi, praesentium voluptate modi perferendis labore nisi cumque voluptatibus quis.
+
+        </p>
+        <h1  onclick="show(this)">section 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta repudiandae dolorum repellendus accusamus dolorem sit quas suscipit sapiente necessitatibus praesentium rerum fugit error, corrupti, dignissimos ex labore alias, facilis ut.
+
+        </p>
+    </body>
+    <style>
+        p,h1{
+            border: solid 1px;
+            margin: 20px;
+            padding: 50px;
+            background-color: blanchedalmond;
+            margin-left: 500px;
+            width: 400PX;
+        }
+    </style>
+</html>
+<script>
+    function hidepara()
+    {
+        console.log(document);
+
+        console.log(document.querySelectorAll("p"));//print paragrapgh 
+        pghrapgh= document.querySelectorAll("p");
+        console.log(pghrapgh);
+
+        for(i=0;i<pghrapgh.length;i++)
+        {
+           console.log(pghrapgh[i]);
+           pghrapgh[i].style.display="none";
+        }
+
+
+    }
+
+
+function show(first)
+{
+    console.log(first);
+    console.log(document.querySelectorAll("p"));
+  
+    nextele=first.nextElementSibling.style.display;
+    console.log(nextele);
+
+    if(nextele=="none")
+    {
+       first.nextElementSibling.style.display="block"
+    }
+    else
+    {
+      first.nextElementSibling.style.display="none"
+      
+    }
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

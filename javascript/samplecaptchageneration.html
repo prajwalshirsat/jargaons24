@@ -1,0 +1,101 @@
+
+<html>
+    <body onload="gen_cap()">
+
+        <input type="text" id="i1">
+        <button onclick="check_cap()" > check</button> 
+        
+<p id="p1"> </p>
+
+    </body>
+</html>
+
+
+<style>
+    body
+    {
+        background-color: aquamarine;
+    }
+    #i1
+    {
+        background-color: darkcyan;
+    }
+    button
+    { 
+        
+        background-color: dimgrey;
+    }
+</style>
+
+<script>
+  var sum;
+  function gen_cap()
+  {
+    console.log(document);
+    
+    console.log(Math);
+
+    data1= Math.round( 10 *Math.random()); 
+     console.log(data1);
+    data2=  Math.round( 10 *Math.random());
+    console.log(data2);
+ 
+    sum=data1+data2;
+    console.log(sum);
+
+    // to dislay usser
+
+    str = ` enter ${data1} + ${data2}`;
+   
+    document.querySelector("#p1").innerHTML=str;          //pass to paragrapgh 
+
+  }
+  function check_cap()
+  {
+    rec= document.querySelector("#i1").value;   //valuue writen in input box this value stored in rec;
+
+    if(rec==sum)
+    {
+        console.log("captcha correct ");
+        document.querySelector("#p1").innerHTML="correct captcha";
+    }
+    else
+    {
+        console.log("wrong capcha");
+
+        document.querySelector("#p1").innerHTML="wrong captcha ";
+    }
+  }
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
